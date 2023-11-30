@@ -20,14 +20,25 @@ nav a {
   font-weight: bold;
   color: black; 
 }
+
 p {
   text-indent: 30pt;
   text-align: justify;
 }
 
+/* BALSAM FOOTER
 footer p {
   text-align: center;
   font-size: small;
+} */
+
+footer {
+  display: flex;
+  justify-content: center;
+  padding: 5px;
+  background-color: #2b9ca2;
+  color: #fff;
+  clear: both;
 }
 
 #container {
@@ -35,12 +46,12 @@ footer p {
   margin: auto;
   background-color: #FAFAFA;
   padding: 10px;
-  min-height: 100vh;
 }
-
-footer {
-  margin-top: 20px; /* Add space between the main content and the footer */
-  clear: both; /* Clear floating elements */
+#containerFoot {
+  width: 90%;
+  margin: auto;
+  background-color: #FAFAFA;
+  padding: 10px;
 }
 
 nav ul {
@@ -71,7 +82,9 @@ header {
   background-repeat: no-repeat;
 }
 
-
+img {
+  float: right;
+}
 
 .middle {
   left: 1px;
@@ -142,6 +155,11 @@ body {
   margin: 50px auto;
 }
 
+.image-container img {
+  max-width: 100%;
+  height: auto;
+}
+
 #search-bar {
   text-align: center;
   margin-top: 10px;
@@ -192,82 +210,8 @@ dropdown {
 
 .dropdown:hover .dropdown-content {
   display: block;
-
-
-
 }
 
-#middle {text-align:center; margin-top:30px}
-
-
-/* Add these rules to your existing styles.css file */
-
-/* Change the color of the home icon */
-nav a i.fas.fa-home {
-  color: #2b9ca2;
-}
-
-/* Change the color of the caret-down icon in the dropdown */
-.dropbtn i.fas.fa-caret-down {
-  color: #2b9ca2;
-}
-
-/* Change the color of other icons in the paragraph */
-.icon-title i.fas {
-  color: #2b9ca2;
-}
-
-footer{ border: 2px solid #2b9ca2; color: white; background-color: #2b9ca2}
-
-/* deb styling */
-
-
-.header {
-font-size: 2em;
-margin-bottom: 30px;
-text-align: center;
-}
-text {
-font-size: 1em;
-line-height: 1.5;
-}
-.collections {
-display: flex;
-justify-content: center; 
-align-items: center; 
-gap: 20px; 
-}
-
-.collection {
-width: 45%; 
-position: relative;
-}
-
-.collection img {
-width: 100%; 
-height: auto; 
-display: block;
-}
-
-.collection-info {
-position: center;
-bottom: -30px;
-left: 10px;
-color: black
-font-size: 40px;
-background: rgba(0, 0, 0, 0.0);
-padding: 5px 10px;
-}
-.collection img {
-width: 100%;
-height: auto;
-display: block;
-transition: filter 0.5s ease; 
-}
-
-.grayscale {
-filter: grayscale(100%);
-}
 
 /*James additions *********/
 
@@ -361,10 +305,4 @@ footer li:first-child {
   margin-right: auto;
 }
 
-
-.blue{color: #2b9ca2}
-
-
-
-
-
+.blue{color: ##2b9ca2}
